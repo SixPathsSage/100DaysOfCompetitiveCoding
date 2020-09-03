@@ -1,5 +1,10 @@
-// https://leetcode.com/problems/largest-time-for-given-digits/
-class Solution {
+package leetcode.september;
+
+/**
+ * Link: https://leetcode.com/problems/largest-time-for-given-digits/
+ */
+
+public class LargestTime {
     int maxMinutes = -1;
     public String largestTimeFromDigits(int[] A) {
         permute(A, 0);
