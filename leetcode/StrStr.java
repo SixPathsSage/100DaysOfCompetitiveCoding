@@ -34,10 +34,12 @@ public class StrStr {
         {
             return x;
         }
-        if(x+1 < haystack.length())
-        int preSplit = getSubString(haystack.substring(x+1, y), needle, x+1, y);
-        int postSplit = getSubString(haystack.substring(x, y-1), needle, x, y-1);
-        return Integer.max(preSplit, postSplit);
+        if(x+1 < haystack.length()) {
+            int preSplit = getSubString(haystack.substring(x+1, y), needle, x+1, y);
+            int postSplit = getSubString(haystack.substring(x, y-1), needle, x, y-1);
+            return Integer.max(preSplit, postSplit);
+        }
+        return -1;
     }
 }
 
